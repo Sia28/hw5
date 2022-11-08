@@ -1,0 +1,67 @@
+.box{
+width: 400px;
+height: 400px;
+padding: 20px;
+background-color: tomato;
+margin: 50px auto;
+border-radius: 50%;
+box-shadow: -10px -10px 10px 10px rgb(124, 179, 179), -20px -20px 20px 20px rgb(173, 134, 62),  -30px -30px 30px 30px rgb(141, 124, 179);
+transition: transform 200ms linear, tranform 200ms linear;
+}
+
+.box:active{
+transform:translate (10px, 10px);
+box-shadow: unset;
+}
+
+
+
+
+
+.modal{
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+
+.modal-button{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: white;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 250ms;
+}
+
+.btn{
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: black;
+    background: #ECECEC;
+    border-radius: 4px;
+    border: none;
+    transition-duration: 250ms;
+    transition-property: color, box-shadow, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
